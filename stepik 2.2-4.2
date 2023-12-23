@@ -1,0 +1,246 @@
+print("Здравствуй, мир!")
+
+print("4 8 15 16 23 42")
+
+print("4")
+print("8")
+print("15")
+print("16")
+print("23")
+print("42")
+
+print("*")
+print("**")
+print("***")
+print("****")
+print("*****")
+print("******")
+print("*******")
+
+print('Привет,', input())
+
+a=input()
+print(a,'- чемпион!')
+
+a = input()
+b = input()
+v = input()
+print(a)
+print(b)
+print(v)
+
+s = input()
+b = input()
+d = input()
+print(d)
+print(b)
+print(s)
+
+print('I', 'like', 'Python', sep='***')
+
+a = input()
+b = input()
+c = input()
+d = input()
+print(b, c, d, sep=a)
+
+a=input()
+print('Привет,', a, end='!')
+
+a=int(input())
+c=1
+b=+2
+print(a)
+print(a+c)
+print(a+b)
+
+a=int(input())
+c=int(input())
+b=int(input())
+print(a+c+b)
+
+a=int(input())
+print ('Объем =', a**3)
+print ('Площадь полной поверхности =', a*a*6)
+
+a = int(input())
+b = int(input())
+print(3 * (a+b) * (a+b) * (a+b) + 275 * b * b - 127 * a - 41)
+
+a=int(input())
+print('Следующее за числом', a, 'число:', a +1)
+print('Для числа', a, 'предыдущее число:', a-1)
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+print((a+b+c+d)*3)
+
+a = int(input()) 
+b = int(input()) 
+print(a, '+', b, '=', a + b)
+print(a, '-', b, '=', a - b)
+print(a, '*', b, '=', a * b)
+
+a = int(input())
+b = int(input())
+c = int(input())
+x = a + b * (c - 1)
+print(x)
+
+# put your python code here
+x = int(input())
+print(x, 2 * x, 3 * x, 4 * x, 5 * x, sep='---')
+
+a=int(input())
+b=int(input())
+c=int(input())
+print(a*b**(c-1))
+
+a=int(input())
+print(a//100)
+
+z=int(input())
+x=int(input())
+print(x//z)
+print(x%z)
+
+z = int(input())
+print(z//2 + z%2)
+
+z = int(input())
+print((z + 3) // 4)
+
+z = int(input())
+x = z // 60 
+c = z % 60
+print(z, "мин - это", x, "час", c, "минут.")
+
+num = int(input())
+z = num % 10
+x = (num % 100) // 10
+c = num // 100
+print("Сумма цифр =", c + x + z)
+print("Произведение цифр =", c * x * z)
+
+zxc = int(input())
+c = zxc % 10
+x = (zxc % 100) // 10
+z = zxc // 100
+print(z, x, c, sep='')
+print(z, c, x, sep='')
+print(x, z, c, sep='')
+print(x, c, z, sep='')
+print(c, z, x, sep='')
+print(c, x, z, sep='')
+
+z = int(input())
+x = z // 1000
+c = (z // 100) % 10
+v = (z // 10) % 10
+b = z % 10
+print("Цифра в позиции тысяч равна", x)
+print("Цифра в позиции сотен равна", c)
+print("Цифра в позиции десятков равна", v)
+print("Цифра в позиции единиц равна", b)
+
+print('*****************')
+print('*               *')
+print('*               *')
+print('*****************')
+
+a = int(input())
+b = int(input())
+print(f'Квадрат суммы {a} и {b} равен {(a + b) ** 2}')
+print(f'Сумма квадратов {a} и {b} равна {a ** 2 + b ** 2}')
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+print(a ** b + c ** d)
+
+n = int(input())
+nn = n * 10 + n
+nnn = n * 100 + n * 10 + n
+print(n + nn + nnn)
+
+a = input()
+b = input()
+if a == b:
+    print('Пароль принят')
+else:
+    print('Пароль не принят')
+
+a = int(input())
+if a % 2 == 0:
+    print('Четное')
+else:
+    print('Нечетное')
+
+a = int(input())
+first = a // 1000
+second = a // 100 - (a // 1000 * 10)
+third = (a % 100 - a % 10) / 10
+last = a % 10
+if first + last == second - third:
+    print('ДА')
+else:
+    print('НЕТ')
+
+z = int(input())
+if z >= 18:
+    print('Доступ разрешен')
+else:
+    print('Доступ запрещен')
+
+a = int(input())
+b = int(input())
+c = int(input())
+if b - a == c - b:
+    print('YES')
+else:
+    print('NO')
+
+a = int(input())
+b = int(input())
+if a > b:
+    print(b)
+else:
+    print(a)
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+if a > b:
+    a = b
+if c > d:
+    c = d
+if a > c:
+    a = c
+print(a)
+
+age = int(input())
+if age <= 13:
+    print('детство')
+if 14 <= age <= 24:
+    print('молодость')
+if 25 <= age <= 59:
+    print('зрелость')
+if age >= 60:
+    print('старость')
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = 0
+if a > 0:
+    d = d + a
+if b > 0:
+    d = d + b
+if c > 0:
+    d = d + c
+print(d)
+
