@@ -1,0 +1,112 @@
+z = int(input())
+x = int(input())
+if z > x:  
+    print('NO')                
+elif x > z: 
+    print('YES')               
+else:
+    print("Don't know")
+
+a, b, c = int(input()), int(input()), int(input())
+if a == b == c:
+    print('Равносторонний')
+elif a == b or a == c or b == c:
+    print('Равнобедренный')
+else:
+    print('Разносторонний')
+
+a, b, c = int(input()), int(input()), int(input())
+if c < a < b or b < a < c:
+    print(a)
+elif a < c < b or b < c < a:
+    print(c)
+else:
+    print(b)
+
+z = int(input())
+if z == 2:
+    print('28')
+elif z <= 7:
+    print (30 + z % 2)
+else:
+    print (31 - z % 2)
+
+m = int(input())
+if m<=59:
+    print('Легкий вес')
+elif m>=60 and m<=63:
+    print('Первый полусредний вес')
+elif m>=64 and m<=68:
+    print('Полусредний вес')
+
+a, b = int(input()), int(input())
+s = input()
+if s == '+':
+    print(a + b)
+elif s == '-':
+    print(a - b)
+elif s == '*':
+    print(a * b)
+elif s == '/':
+    if b == 0:
+        print('На ноль делить нельзя!')
+    else:
+        print(a / b)
+else:
+    print('Неверная операция')
+
+s = int(input())
+b = s % 10
+g = s % 100 // 10
+if b == 0 and g == 0:
+    print('YES')
+else:
+    print('NO')
+
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+if (x1 + y1 + x2 + y2) % 2 == 0:
+    print('YES')
+else:
+    print('NO')
+
+a = int(input())
+b = input()
+if a >= 10 and a <= 15 and b == 'f':
+    print("YES")
+else:
+    print("NO")
+
+z, x = int(input()), ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
+print(x[z-1] if 1 <= z <= 10 else 'ошибка')
+
+z = int(input())
+if z % 2 != 0:
+    print("YES")
+if z % 2 == 0 and z >= 2 and z <= 5:
+    print("NO")
+if z % 2 == 0 and z >= 6 and z <= 20:
+    print("YES")
+if z % 2 == 0 and z > 20:
+    print("NO")
+
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+if (x1 - y1 == x2 - y2) or (x1 + y1 == x2 + y2):
+    print('YES')
+else:
+    print('NO')
+
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+if (x1 - x2) ** 2 + (y1 - y2) ** 2 == 5:
+    print("YES")
+else:
+    print("NO")
+
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+if abs(x1 - x2) == abs(y1 - y2) or x1 == x2 or y1 == y2:
+    print('YES')
+else:
+    print('NO')
+
